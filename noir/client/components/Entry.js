@@ -5,15 +5,14 @@ import css from '../styles/style.styl';
 
 const Entry = React.createClass({
   render() {
-    const { entry, i, body_text } = this.props;
+    const { entry, i, body_text, replies } = this.props;
 
     return(
       <div className='entry--entry'>
         <div className='entry--body-text'>
-          <h1>{entry.title}</h1>
-          <h3>
-            <Link to={`/view/${entry.link}`} />
-          </h3>
+          <Link to={`/view/${entry.id}`}>
+            <h1>{entry.title}</h1>
+          </Link>
           <p>{entry.body_text}</p>
         </div>
       </div>
