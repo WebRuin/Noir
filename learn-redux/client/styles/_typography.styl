@@ -6,6 +6,8 @@ blue = #125688
 offwhite = #fafafa
 lightgrey  = #EDEEED
 lightgray = lightgrey // OH Canada!
+h1color = #bb082e
+h2color = #710017
 
 html
   font-size 10px
@@ -19,12 +21,27 @@ h1
   font-family billabong, 'billabongregular'
   text-align center
   font-weight 100
-  font-size 13rem
+  font-size 8rem
   margin 2rem 0
   letter-spacing -1px
   text-shadow 0px 4px 0 rgba(18, 86, 136, 0.11)
   a
-    color blue
+    color h1color
+    text-decoration none
+    &:focus
+      outline 0
+
+h2
+  font-family billabong, 'billabongregular'
+  text-align center
+  font-weight 100
+  font-size 5rem
+  margin 2rem 0
+  color h2color
+  letter-spacing -1px
+  text-shadow 0px 4px 0 rgba(18, 86, 136, 0.11)
+  a
+    color red
     text-decoration none
     &:focus
       outline 0

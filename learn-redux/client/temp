@@ -1,0 +1,11 @@
+let userId = '00001';
+let partnerId = '00002';
+
+// if (partnerId != null) {
+//   const page = <Page user={userId} partner={partnerId} test='1' />
+// } else {
+//   const page = <div className='page-wrapper'><Page user={userId} partner={partnerId} test='1' /><Page user={userId} partner={partnerId} test='2' /></div>
+// }
+
+
+<Book bodyText={this.props.pages.body_text} author={this.props.pages.author} key={this.props.pages.id} />

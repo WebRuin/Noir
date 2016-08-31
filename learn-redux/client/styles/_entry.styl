@@ -1,0 +1,24 @@
+entrycolor = #eee
+
+.entry-wrapper
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+.entry--entry
+    width: 45%;
+    max-width: 80%;
+    min-width: 45%;
+    height: inherit;
+    margin-top: 2rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: #eee;
+    border: 4px solid #000;
+    outline: 3px solid #f00;
+    position: relative;
+
+.entry-wrapper:nth-child(odd)
+  margin-right -1rem
+.entry-wrapper:nth-child(even)
+  margin-left -1rem
